@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import "./App.css"; // Si tu veux appliquer du CSS global
+import "./App.css"; // Importer le CSS global
 import OneAs from "./OneAs"; // Importer le composant 1as
 import TwoAs from "./TwoAs"; // Importer le composant 2as
 import ThreeAs from "./ThreeAs"; // Importer le composant 3as
@@ -10,8 +10,14 @@ function App() {
     <Router>
       <div className="App">
         <header>
-          <h1>Bienvenue sur Apprendre le français !</h1>
-          <p>Voici quelques articles où je parlerai du programme.</p>
+          <h1 className="animation">Bienvenue sur Apprendre le français</h1>
+          <h3 className="animation">
+            Site d'apprentissage interactif du lycée Souissi
+          </h3>
+          <p>
+            Voici quelques articles où je parlerai du programme et mettrai à
+            jour les cours et les exercices au fur et à mesure.
+          </p>
         </header>
 
         <nav>
@@ -40,8 +46,8 @@ function App() {
               path="/"
               element={
                 <>
-                  <h2>Choisissez un niveau</h2>
-                  <p>Sélectionnez un niveau pour voir le programme.</p>
+                  <h2>Choisisis ton niveau</h2>
+                  <p>Sélectionne un niveau pour voir le programme.</p>
                 </>
               }
             />
