@@ -46,7 +46,7 @@ function App() {
               path="/"
               element={
                 <>
-                  <h2>Choisisis ton niveau</h2>
+                  <h2>Choisis ton niveau</h2>
                   <p>Sélectionne un niveau pour voir le programme.</p>
                 </>
               }
