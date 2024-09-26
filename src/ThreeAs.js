@@ -11,11 +11,38 @@ function ThreeAs() {
         lancer un appel ou comment pousser les lecteurs à agir <br />
         la narration avec la nouvelle fantastique
       </p>
-      <img src="/images/books3.png" alt="3as" />
-      <h2>les prepositions </h2>
-      <p>Exercices pour s'entrainer et reviser les bases</p>
-      <img src="/images/prep1.png" alt="2as" />
-      <img src="/images/prep2.png" alt="2as" />
+      <img
+        src="/images/books3.png"
+        alt="3as"
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+          display: "block",
+          margin: "0 auto",
+        }}
+      />
+      <h2>Les prépositions</h2>
+      <p>Exercices pour s'entrainer et réviser les bases</p>
+      <img
+        src="/images/prep1.png"
+        alt="prep1"
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+          display: "block",
+          margin: "0 auto",
+        }}
+      />
+      <img
+        src="/images/prep2.png"
+        alt="prep2"
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+          display: "block",
+          margin: "0 auto",
+        }}
+      />
     </div>
   );
 }
