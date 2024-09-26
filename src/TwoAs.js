@@ -12,6 +12,10 @@ function TwoAs() {
         la narration avec la nouvelle d'anticipation
       </p>
       <img src="/images/books2.png" alt="2as" />
+      <h2>les prepositions </h2>
+      <p>Exercices pour s'entrainer et reviser les bases</p>
+      <img src="/images/prep1.png" alt="2as" />
+      <img src="/images/prep2.png" alt="2as" />
     </div>
   );
 }

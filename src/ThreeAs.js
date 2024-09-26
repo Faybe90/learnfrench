@@ -12,6 +12,10 @@ function ThreeAs() {
         la narration avec la nouvelle fantastique
       </p>
       <img src="/images/books3.png" alt="3as" />
+      <h2>les prepositions </h2>
+      <p>Exercices pour s'entrainer et reviser les bases</p>
+      <img src="/images/prep1.png" alt="2as" />
+      <img src="/images/prep2.png" alt="2as" />
     </div>
   );
 }
