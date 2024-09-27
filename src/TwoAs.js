@@ -4,6 +4,9 @@ import React from "react";
 function TwoAs() {
   return (
     <div>
+      {/* CanvaEmbed déplacé en premier */}
+      <CanvaEmbed />
+
       <h2>2as</h2>
       <p>
         Le programme de 2 as comporte des projets divers : <br />
@@ -44,8 +47,6 @@ function TwoAs() {
           margin: "0 auto",
         }}
       />
-      {/* CanvaEmbed doit être placé correctement en tant que composant à part entière */}
-      <CanvaEmbed />
     </div>
   );
 }
