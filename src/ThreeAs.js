@@ -1,6 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-function ThreeAs() {
+// Identifiant unique de votre quiz
+const quizID = "a8020de1-740d-41b3-9a68-88ddc88d304a";
+
+const ThreeAs = () => {
+  useEffect(() => {
+    // Sélectionnez l'élément cible
+    const targetDiv = document.getElementById("kahoot-quiz");
+
+    // Vérifiez que l'iframe n'existe pas déjà
+    if (targetDiv && targetDiv.childNodes.length === 0) {
+      const iframe = document.createElement("iframe");
+      iframe.src = `https://play.kahoot.it/embed?quizId=${quizID}`;
+      iframe.width = "100%";
+      iframe.height = "600px";
+      iframe.allowFullscreen = true;
+
+      // Ajoutez l'iframe à la div
+      targetDiv.appendChild(iframe);
+    }
+  }, []); // [] signifie que le code ne s'exécutera qu'une fois au montage
+
   return (
     <div>
       {/* Canva Embed placé au début */}
@@ -79,8 +99,10 @@ function ThreeAs() {
           margin: "0 auto",
         }}
       />
+      {/* Div pour l'iframe Kahoot */}
+      <div id="kahoot-quiz"></div>
     </div>
   );
-}
+};
 
 export default ThreeAs;
