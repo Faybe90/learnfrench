@@ -67,16 +67,7 @@ const ThreeAs = () => {
         Lancer un appel : comment pousser les lecteurs à agir <br />
         La narration avec la nouvelle fantastique
       </p>
-      <img
-        src="/images/books3.png"
-        alt="3as"
-        style={{
-          maxWidth: "100%",
-          height: "auto",
-          display: "block",
-          margin: "0 auto",
-        }}
-      />
+
       <h2>Les prépositions</h2>
       <p>Exercices pour s'entraîner et réviser les bases</p>
       <img
@@ -99,8 +90,17 @@ const ThreeAs = () => {
           margin: "0 auto",
         }}
       />
-      {/* Div pour l'iframe Kahoot */}
-      <div id="kahoot-quiz"></div>
+
+      {/* Section avec le titre et l'iframe */}
+      <div>
+        <h2>Le discours rapporté</h2>
+        <iframe
+          src="https://gamma.app/embed/jeqx9l8yckpxogz"
+          style={{ width: "700px", maxWidth: "100%", height: "450px" }}
+          allow="fullscreen"
+          title="Du discours direct au discours indirect"
+        ></iframe>
+      </div>
     </div>
   );
 };

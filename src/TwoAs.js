@@ -1,57 +1,6 @@
 import React from "react";
 
-// Composant TwoAs
-function TwoAs() {
-  return (
-    <div>
-      {/* CanvaEmbed déplacé en premier */}
-      <CanvaEmbed />
-
-      <h2>2as</h2>
-      <p>
-        Le programme de 2 as comporte des projets divers : <br />
-        Exposer pour démontrer un fait : le discours objectivé <br />
-        L'argumentation Plaidoyer et Réquisitoire <br />
-        <br />
-        La narration avec la nouvelle d'anticipation
-      </p>
-      <img
-        src="/images/books3.png"
-        alt="3as"
-        style={{
-          maxWidth: "100%",
-          height: "auto",
-          display: "block",
-          margin: "0 auto",
-        }}
-      />
-      <h2>Les prépositions</h2>
-      <p>Exercices pour s'entraîner et réviser les bases</p>
-      <img
-        src="/images/prep1.png"
-        alt="prep1"
-        style={{
-          maxWidth: "100%",
-          height: "auto",
-          display: "block",
-          margin: "0 auto",
-        }}
-      />
-      <img
-        src="/images/prep2.png"
-        alt="prep2"
-        style={{
-          maxWidth: "100%",
-          height: "auto",
-          display: "block",
-          margin: "0 auto",
-        }}
-      />
-    </div>
-  );
-}
-
-// Composant CanvaEmbed déplacé correctement
+// Composant CanvaEmbed
 function CanvaEmbed() {
   return (
     <div
@@ -86,6 +35,33 @@ function CanvaEmbed() {
         allow="fullscreen"
         title="programme de 2 as"
       ></iframe>
+    </div>
+  );
+}
+
+// Composant principal TwoAs
+function TwoAs() {
+  return (
+    <div>
+      <CanvaEmbed />
+      <h2>2as</h2>
+      <p>
+        Le programme de 2 as comporte des projets divers : <br />
+        Exposer pour démontrer un fait : le discours objectivé <br />
+        L'argumentation Plaidoyer et Réquisitoire <br />
+        <br />
+        La narration avec la nouvelle d'anticipation
+      </p>
+
+      <div>
+        <h1>les etapes de la demonstration </h1>
+        <iframe
+          src="https://gamma.app/embed/waomvmssjfowvyl"
+          style={{ width: "700px", maxWidth: "300%", height: "450px" }}
+          allow="fullscreen"
+          title="Comment Isaac Newton a-t-il découvert la gravité ?"
+        ></iframe>
+      </div>
     </div>
   );
 }
